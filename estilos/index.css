@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fundo-gradiente {
+    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+}
+
+.boas-vindas {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 5%;
+}
+
+.boas-vindas>* {
+    flex: 1;
+}
+
+.texto-boas-vindas {
+    padding-top: 60px;
+}
+
+.texto-boas-vindas h1,
+.texto-boas-vindas h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.texto-boas-vindas h1 {
+    color: #ef0189;
+}
+
+.texto-boas-vindas h2 {
+    color: #004AAD;
+}
+
+.texto-boas-vindas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    display: inline-block;
+    background-color: #ef0189;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.conteiner-carrossel {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    width: 524px;
+    margin-bottom: 25px;
+}
+
+.carrossel img {
+    /* border-radius: 25% 75%/50%; */
+    border-radius: 14% 30%/73%;
+    width: 524px;
+    height: 400px;
+    z-index: 10;
+    transform: scale(1.0);
+}
+
+.carrossel {
+    display: grid;
+    width: 524px;
+    /* https://css-tricks.com/css-only-carousel/ */
+    overflow: hidden;
+}
+
+.carrossel>div {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.carrossel div {
+    /* top: 0; */
+    opacity: 0;
+    animation: display 10s infinite;
+    /* margin-left: 524px; */
+}
+
+.carrossel:hover {
+    animation-play-state: paused;
+}
+
+.carrossel figcaption {
+    text-align: center;
+}
+
+.navegacao-carrossel {
+    z-index: 10;
+    align-self: center;
+}
+
+.navegacao-carrossel a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #ef0189;
+}
+
+@keyframes display {
+    0% {
+      transform: translateX(524px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-524px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-524px);
+      opacity: 0;
+    }
+  }
+
+.carrossel div:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.carrossel div:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.carrossel div:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.carrossel div:nth-child(5) {
+    animation-delay: 8s;
+}

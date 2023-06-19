@@ -1,0 +1,190 @@
+/* Estilizando o Menu */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #FEFEFE;
+    padding: 0 50px;
+    /* Caso queiramos o fundo do menu transparente
+    background-color: #cddadba8;
+    backdrop-filter: blur(40px); */
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #262b73;
+    padding: 6px 12px;
+}
+
+.menu li a:hover {
+    background-color: #3e46b8;
+    color: white;
+    border-radius: 2em;
+}
+
+/* Estilizando o submenu */
+
+.menu ul li ul li a {
+    display: block;
+    line-height: 20px;
+}
+
+.menu ul ul {
+    border-radius: 1em;
+    box-shadow: 2px 3px 3px lightgray;
+    background-color: #FEFEFE;
+    display: none;
+    top: 0px;
+    position: absolute;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+    margin-top: 50px;
+}
+
+.submenu-mais {
+    font-size: 18px;
+    vertical-align: text-bottom;
+}
+
+/* Estilizando o rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: #262b73;
+}
+
+footer a {
+    color: #262b73;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ef0189;
+}
+
+footer a:active {
+    color: #ef0189;
+}
+
+.fundo-gradiente {
+    padding-top: 3em;
+    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+}
+
+footer>p {
+    padding-bottom: 0.5em;
+    font-size: 16px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.redes img {
+    height: 36px;
+    width: 36px;
+}
+
+div.copyright p {
+    padding-top: 8px;
+}
+
+footer .w-100 p {
+    padding-top: 15px;
+}
+
+nav.mapa-site {
+    display: flex;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+nav.mapa-site>* {
+    width: 33%;
+}
+
+.mapa-site li {
+    margin-bottom: 8px;
+}
+
+/* Estilizando o aviso de cookies */
+
+.cookies {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #FEFEFE;
+    padding: 0 50px;
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    padding: 0 10%;
+}
+
+.cookies-texto, .cookies-texto a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cookies-fechar a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.cookies a:hover {
+    color: #ef0189;
+}
+
+.cookies-fechar:hover {
+    background-color: #E9A1D7;
+    border-radius: 15px;
+}

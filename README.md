@@ -89,4 +89,4 @@ Opções de contato com os autores do projeto e políticas de uso e privacidade.
 * Professor [LuthGom](https://github.com/LuthGom);
 * À cada membro do projeto pela dedicação;
 * https://visualhunt.com/
-* https://www.canva.com/# reizes_da_cura
+* https://www.canva.com/
